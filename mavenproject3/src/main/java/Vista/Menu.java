@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package frames;
+package Vista;
 
 /**
  *
@@ -26,21 +26,80 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jblMarket = new javax.swing.JLabel();
+        btnclientes = new javax.swing.JButton();
+        btnarticulos = new javax.swing.JButton();
+        btnfactura = new javax.swing.JButton();
+        btnfacturadetalle = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jblMarket.setFont(new java.awt.Font("Verdana", 1, 48)); // NOI18N
+        jblMarket.setForeground(new java.awt.Color(255, 153, 51));
+        jblMarket.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jblMarket.setText("MARKET");
+
+        btnclientes.setText("Clientes");
+        btnclientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnclientesActionPerformed(evt);
+            }
+        });
+
+        btnarticulos.setText("Atriculos");
+        btnarticulos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnarticulosActionPerformed(evt);
+            }
+        });
+
+        btnfactura.setText("Factura");
+
+        btnfacturadetalle.setText("Factura Detalle");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(111, 111, 111)
+                .addComponent(jblMarket)
+                .addContainerGap(126, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnfacturadetalle, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                    .addComponent(btnfactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnarticulos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnclientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jblMarket)
+                .addGap(18, 18, 18)
+                .addComponent(btnclientes)
+                .addGap(18, 18, 18)
+                .addComponent(btnarticulos)
+                .addGap(18, 18, 18)
+                .addComponent(btnfactura)
+                .addGap(18, 18, 18)
+                .addComponent(btnfacturadetalle)
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnclientesActionPerformed
+
+    private void btnarticulosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnarticulosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnarticulosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +137,10 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnarticulos;
+    public javax.swing.JButton btnclientes;
+    public javax.swing.JButton btnfactura;
+    public javax.swing.JButton btnfacturadetalle;
+    public javax.swing.JLabel jblMarket;
     // End of variables declaration//GEN-END:variables
 }
